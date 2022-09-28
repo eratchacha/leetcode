@@ -27,7 +27,7 @@ struct ListNode* reverseList(struct ListNode* head){
     memset(arr, 0, sizeof(int) * len);
     ind = head;
     
-   while (ind != 0)
+    while (ind != 0)
     {
         arr[i] = ind -> val; 
         i++;
@@ -50,6 +50,7 @@ struct ListNode* reverseList(struct ListNode* head){
         
         i++;
     }
+    
     ind -> next = 0;
     free(arr);
     return rev;
