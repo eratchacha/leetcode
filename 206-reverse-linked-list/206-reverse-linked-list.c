@@ -16,10 +16,6 @@ struct ListNode* reverseList(struct ListNode* head){
     
     if (head == 0)
         return 0;
-    /*
-    if (head -> next == 0)
-        return head;
-    */
     
     while (ind != 0)
     {
