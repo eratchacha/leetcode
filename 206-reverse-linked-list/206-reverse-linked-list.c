@@ -16,8 +16,10 @@ struct ListNode* reverseList(struct ListNode* head){
     
     if (head == 0)
         return 0;
+    /*
     if (head -> next == 0)
         return head;
+    */
     
     while (ind != 0)
     {
@@ -26,10 +28,10 @@ struct ListNode* reverseList(struct ListNode* head){
     }
     
     arr = malloc(sizeof(int) * len);
-    memset(arr,0,sizeof(arr));
+    memset(arr, 0, sizeof(int) * len);
     ind = head;
     
-    while (ind != 0)
+   while (ind != 0)
     {
         arr[i] = ind -> val; 
         i++;
